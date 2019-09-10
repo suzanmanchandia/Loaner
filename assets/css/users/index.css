@@ -1,0 +1,22 @@
+/*table spacing */
+#contentTableHeader .userid{
+	width:23% !important;
+	overflow:hidden;
+}
+
+#contentTableHeader .fname{
+	width:22.5% !important;
+	overflow:hidden;
+}
+
+#contentTableHeader .email{
+	width:22.5% !important;
+}
+
+#contentTableHeader .role{
+		width:12% !important;
+}
+
+#contentTableHeader .filler{
+	width:20% !important;
+}

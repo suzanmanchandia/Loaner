@@ -1,0 +1,1 @@
+    <label for="user-role">Role:</label> {{ Form::select('r', array('' => 'All User Roles') + Config::get('dropdowns.user_roles' ), Input::get('r'), array('class' => 'auto-submit form-control', 'id' => 'user-role' ) ) }}

@@ -1,0 +1,50 @@
+/*----------------------------  Main Page Styling  ----------------------------*/
+.kitid{
+		width:8%;
+}
+
+.equipmentid{
+		width:8%
+}
+
+.userid{
+		width:10%
+}
+.name{
+    	width:10%
+}
+
+.loans-desc{
+		width:19%;
+}
+
+.issue_date{
+		width:11%;
+}
+
+.due_date{
+		width:12%;
+}
+
+.fine{
+		width:7%;
+}
+
+.filler{
+		width:15%;
+}
+
+.form-button{
+		-webkit-appearance: button;
+		-webkit-user-select: none;
+		-moz-appearance: button;
+		-moz-user-select: none; 		
+		display: inline-block;
+		width:100px;
+		line-height: 28px;
+		text-align: center;
+		margin-left: 15px;
+}
+.form-button:hover{
+		cursor: pointer;
+}

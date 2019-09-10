@@ -1,0 +1,38 @@
+#home-content-holder{
+		width:1000px;
+		margin:auto;
+}
+.home-section-holder{
+		width:300px;
+		height:300px;
+		display:inline-block;
+		border:1px solid;
+		padding:5px;
+		padding-top:10px;
+		margin:5px;
+}
+.home-section-header{
+		background:rgb(80,80,80);
+		color:white;
+		font-size:16px;
+		height:20px;
+		padding:5px;
+}
+.home-notification-holder{
+		margin-top:15px;
+		margin-bottom:30px;
+		border-bottom:1px solid;
+}
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 1px;
+}
+
+.thumbnail.right-caption {
+    float: left;
+}
+
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+	float: right;
+}

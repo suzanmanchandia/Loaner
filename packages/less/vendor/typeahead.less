@@ -1,0 +1,25 @@
+.tt-dropdown-menu {
+	&:extend(.dropdown-menu);
+}
+
+.tt-suggestion {
+	> p {
+		&:extend(.dropdown-menu > li > a);
+		&:hover,
+		&:focus {
+			&:extend(.dropdown-menu > .active > a);
+		}
+		.title {
+			font-style: italic;
+		}
+	}
+	&.tt-cursor {
+		> p {
+			&:extend(.dropdown-menu > .active > a);
+		}
+	}
+}
+
+.twitter-typeahead {
+	width: 100%;
+}

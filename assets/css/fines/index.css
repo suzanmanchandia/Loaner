@@ -1,0 +1,198 @@
+html, body{
+		height:100%;
+}
+#page{
+		height:100%;
+}
+#content{
+		height:75%;
+		width:100% !important;
+}
+#user-selection-container{
+		display:inline-block;
+		width:25%;
+		padding-right:10px;
+		border-right:1px solid;
+}
+#user-selection-header{
+		background:rgb(60,60,60);
+		color:white;
+		font-size:16px;
+		height:20px;
+		padding:7px;
+		text-align:center;
+}
+#liveSearch-container{
+		display:inline-block;
+		width:98%;
+		margin-top:5px;
+}
+#liveSearch-icon{
+		float:left;
+}
+#liveSearch-icon:hover{
+		cursor:pointer;
+}
+#liveSearch-icon:before{
+		content:"";
+		display:inline-block;
+		width:6px;
+		height:6px;
+		border:2px solid rgb(60,60,60);
+		
+		border-radius:12px;
+}
+#liveSearch-icon:after{
+		content:"";
+		display:inline-block;
+		width:2px;
+		height:7px;
+		margin-top:0;
+		background:rgb(60,60,60);
+		position:relative;
+		top:4px;
+		left:-1px;
+		-webkit-transform:rotate(-45deg);
+		-moz-transform:rotate(-45deg);
+		-ms-transform:rotate(-45deg);
+		-o-transform:rotate(-45deg);
+}
+#liveSearch{
+		width:84%;
+		margin-left:3%;
+}
+#user-selection-container{
+		height:100%;
+}
+#user-selection-table-container{
+		height:86%;
+		margin:10px 0px 10px 0px;
+		overflow-y:auto;
+}
+#user-selection-table tr{
+	
+		/*
+		background:rgb(60,60,60);
+		color:white;*/
+		color: rgb(51, 51, 51);
+
+}
+
+#user-selection-table tr:hover{
+		cursor:pointer;
+		/*
+		background:rgb(60,60,60);
+		color:white;*/
+		color: white;
+text-decoration: none;
+background-color: rgb(0, 129, 194);
+background-image: linear-gradient(to bottom, rgb(236, 0, 140), rgb(236, 0, 140));
+background-repeat: repeat-x;
+}
+
+#user-selection-table tr:focus{
+		cursor:pointer;
+		/*
+		background:rgb(60,60,60);
+		color:white;*/
+		color: rgb(255, 255, 255);
+text-decoration: none;
+background-color: rgb(0, 129, 194);
+background-image: linear-gradient(to bottom, rgb(236, 0, 140), rgb(236, 0, 140));
+background-repeat: repeat-x;
+}
+
+
+
+.user-selected{
+		cursor:pointer;
+		/*
+		background:rgb(60,60,60);
+		color:white;*/
+		color: rgb(255, 255, 255);
+text-decoration: none;
+background-color: rgb(0, 129, 194);
+background-image: linear-gradient(to bottom, rgb(236, 0, 140), rgb(236, 0, 140));
+background-repeat: repeat-x;
+}
+#user-fines-container{
+		display:inline-block;
+		width:70%;
+		float:right;
+		height:100%;
+		overflow-x:hidden;
+		overflow-y:auto;
+		margin-right:2%;
+}
+#user-fines-placeholder{
+		font-size:24px;
+		margin:auto;
+		margin-top:20%;
+		text-align:center;
+}
+#user-fines-header{
+		margin-bottom:15px;
+}
+.user-fines-header-element{
+		font-weight:bold;
+		line-height:27px;
+		text-align:center;
+}
+#user-fines-user{
+		font-size:18px;
+}
+.user-fines-tableHeader-element{
+		font-weight:bold;
+}
+.table-element{
+		border-right:1px solid #CCCCCC;
+}
+.total{
+		border-bottom:none;
+}
+.red{
+		font-weight:bold;
+		color:rgb(205,20,20);
+}
+.green{
+		font-weight:bold;
+		color:green;
+}
+.table-element-title{
+		width:40%;
+}
+.table-element-amount{
+		width:15%;
+}
+#user-fines-paymentsTable{
+		margin-top:30px;
+}
+#user-fines-balanceTable{
+		margin-top:30px;
+}
+#div-button{
+		-webkit-appearance:button;
+		-moz-appearance:button;
+		width:300px;
+		line-height:30px;
+		font-size:14px;
+		text-align:center;
+		margin:auto;
+		margin-top:50px;
+}
+#div-button:hover{
+		cursor:pointer;
+}
+#payFine-fancybox{
+		width:60%;
+		float:right;
+		border:1px solid;
+		line-height:15px;
+}
+#payFine-fancybox:focus{
+		width:60%;
+		float:right;
+		border:1px solid;
+		border-color:rgb(205,20,20);
+		line-height:15px;
+}

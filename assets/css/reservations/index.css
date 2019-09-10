@@ -1,0 +1,35 @@
+
+/*----------------------------  Main Page Styling  ----------------------------*/
+.kitid{
+		width:10%;
+}
+.equipmentid{
+		width:10%
+}
+.userid{
+		width:10%
+}
+.name{
+	width:15%;
+}
+.loans-desc{
+	width:20%;
+}
+.issue_date{
+		width:12%;
+}
+.due_date{
+		width:13%;
+}
+.filler{
+		width:10%;
+}
+
+
+
+#listed-equipment-label{
+		width:15%;
+}
+#listed-equipment{
+		width:84%;
+}

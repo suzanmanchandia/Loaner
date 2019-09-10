@@ -1,0 +1,31 @@
+box: wercker/php
+build:
+  steps:
+    - mbrevda/php-lint:
+        php_directory: .
+        directory: .
+    - script:
+        name: Install and check dependencies
+        code: |-
+            cd laravel && composer install --no-interaction && cd ..
+    - script:
+        name: PHPUnit integration tests
+        code: cd laravel && phpunit --configuration phpunit.xml && cd ..
+    - wercker/npm-install@0.9.3
+    - wercker/grunt@0.1.0
+    - script:
+        name: Cleanup
+        code: |-
+          rm -rf node_modules
+          rm -rf assets
+deploy:
+  steps:
+    - add-ssh-key:
+        keyname: DEPLOY_KEY
+    - add-to-known_hosts:
+        hostname: $DEPLOY_HOST
+    - script:
+        name: Perform deployment and migrate
+        code: |-
+          ssh -t artusc5@$DEPLOY_HOST "cd ~/public_html/loanerV4 && git fetch --all && git checkout --force $WERCKER_GIT_COMMIT && grunt && mv -f production.htaccess .htaccess"
+          ssh -t artusc5@$DEPLOY_HOST "cd ~/public_html/loanerV4/laravel && php composer.phar install && php artisan migrate"
